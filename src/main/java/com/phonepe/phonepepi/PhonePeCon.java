@@ -5,13 +5,13 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.view.RedirectView;
 
 @RestController
-@RequestMapping("/api/user")
+@RequestMapping
 public class PhonePeCon {
 
     @Autowired
     private InitiatePayment initiatePayment;
 
-    @GetMapping("/initiate")
+    @GetMapping("/")
     public RedirectView InitiateP() {
         System.out.println("Payment initiation is requested");
         String url = initiatePayment.initiate(1000);
