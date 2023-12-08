@@ -3,7 +3,7 @@
 ## Hit below API on browser
 
 ````
-http://localhost:8080/api/user/initiate
+https://phonepe-integration.onrender.com/
 ````
 
 ## Choosing Net Banking or Card
