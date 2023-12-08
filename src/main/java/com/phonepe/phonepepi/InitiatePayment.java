@@ -28,8 +28,8 @@ public class InitiatePayment {
 
     String merchantTransactionId = "MT7850590068188104";
     private String merchantUserId="MUID123";
-    private String callbackurl="http://localhost:8080/payment-callback/"+merchantId+"/"+merchantTransactionId;
-    private String redirectUrl = "http://localhost:8080/payment-callback/"+merchantId+"/"+merchantTransactionId;
+    private String callbackurl="https://phonepe-integration.onrender.com/payment-callback/"+merchantId+"/"+merchantTransactionId;
+    private String redirectUrl = "https://phonepe-integration.onrender.com/payment-callback/"+merchantId+"/"+merchantTransactionId;
 
     public String initiate(int amount){
         phonepeClient = new PhonePePaymentClient(merchantId, saltKey, saltIndex, env, shouldPublishEvents);
