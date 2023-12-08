@@ -10,9 +10,9 @@ RUN mvn clean package -DskipTests
 # This is container I am going to run application in
 FROM openjdk:17-ea-18-jdk-slim
 
-COPY --from=build /target/phonepe-integration-0.0.1-SNAPSHOT.jar phonepe-integration.jar
+COPY --from=build /target/phonepepi-0.0.1-SNAPSHOT.jar phonepepi.jar
 EXPOSE 8080
 # what command i am going to run
-ENTRYPOINT ["java","-jar","phonepe-integration.jar"]
+ENTRYPOINT ["java","-jar","phonepepi.jar"]
 
 
